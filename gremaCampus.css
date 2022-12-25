@@ -1,0 +1,48 @@
+/* grema in pics slide show*/
+.grema_pics {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.pics {
+    padding-top: 2rem;
+}
+
+.avatar {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 2px solid blue;
+}
+
+.pics-info {
+    text-align: center;
+}
+
+.pics_body {
+    background: blue;
+    padding: 2rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.pics_body::before {
+    content: "";
+    display: block;
+    background: linear-gradient(
+        135deg,
+        transparent,
+        blue,
+        blue,
+        blue,
+        );
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
